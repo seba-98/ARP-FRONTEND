@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-carpinteria",
+  "version": "1.0.0",
+  "description": "Proyecto de la pagina de carpinteria",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "author": "Nehemias Astrada, Sebastian Belettieri",
+  "license": "ISC"
+}
