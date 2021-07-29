@@ -5,23 +5,23 @@ $(document).ready(function () {
   
   $('.facebook').mouseenter(function () { 
     
-    $('.facebook img').attr('src', 'images/facebook-danger.jpeg');
+    $('.facebook img').attr('src', '../images/facebook-danger.jpeg');
     
   })
   $('.facebook').mouseleave(function () { 
     
-    $('.facebook img').attr('src', 'images/facebook.jpeg');
+    $('.facebook img').attr('src', '../images/facebook.jpeg');
     
   })
   
   $('.instagram').mouseenter(function () { 
     
-    $('.instagram img').attr('src', 'images/ig-danger.jpeg');
+    $('.instagram img').attr('src', '../images/ig-danger.jpeg');
     
   })
   $('.instagram').mouseleave(function () { 
     
-    $('.instagram img').attr('src', 'images/instagram.jpeg');
+    $('.instagram img').attr('src', '../images/instagram.jpeg');
     
   })
   
