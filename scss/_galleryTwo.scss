@@ -1,0 +1,22 @@
+.galleryTwo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        justify-content: center;
+        max-width: 35rem;
+        img{
+            max-width: 100%;
+            max-height: 90%;
+        }
+        
+        overflow: hidden;
+        padding: 1rem;
+        background: white;
+    }
+}

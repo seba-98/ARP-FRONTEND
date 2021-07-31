@@ -1,0 +1,67 @@
+/*-------------------------------INICIO BARRA DE NAVEGACION------------------------------------------------*/
+
+header{
+
+
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h1{
+        font-size: 27px;
+      }
+    }
+    
+    }
+
+}
+    
+.divisor{
+  border-right: 1px solid rgb(175, 175, 175);
+}
+
+.elements{
+  li{
+    padding: 0 10px 0 10px;
+    a{
+      font-weight: bold;
+      font-size: 17px;
+    
+      color: rgb(71, 71, 71) !important;
+      text-decoration: none;
+      background-image: linear-gradient(red, red);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      }
+
+    a:hover{
+        background-size: 100% 2px;
+    }
+
+    a:focus{
+        background-size: 100% 2px;
+    }
+  }
+}
+
+ 
+
+ 
+  
+ 
+  
+
+ 
+  
+
+  
+  /*-------------------------------FIN BARRA DE NAVEGACION------------------------------------------------*/
+  

@@ -1,0 +1,215 @@
+
+@media (max-width: 1000px) {
+    .obras-image{
+      article{
+        img {
+          flex-direction: column;
+          }
+      } 
+    } 
+  
+    .lista {
+      display: none;
+    }
+   
+    
+  
+    .cuadro2 ul{
+        li{
+             h2 {
+              font-size: 20px;
+            }
+        } 
+    } 
+    .cuadro2{
+      ul{
+        li{
+            h2{
+                span {
+              font-size: 40px;
+            }
+          } 
+        } 
+      } 
+    } 
+  }
+
+
+  @media (max-width:992px){
+
+    .facebook, .instagram{
+
+      img{
+        border-radius: 25%;
+      }
+  
+    }
+
+    .divisor{
+      border-right: none;
+    }
+
+    .burger-open{
+      border: 2px solid rgb(133, 111, 97);
+      margin-top: 3rem;
+      background-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .elements{
+      max-width: 10rem;
+      margin-left: 2rem;
+
+      li{
+        a{
+          font-weight: bold;
+          color: black;
+        }
+      }
+
+    }
+   
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+
+    .obras {
+      nav{
+
+        ul{
+          p{
+          font-size: 15px !important;
+          max-width: 70%;
+        }
+        }
+      }
+
+      
+    }
+    
+    footer{
+      div{
+        flex-wrap: wrap !important;
+      }
+    }
+
+    .obras-image{
+      article img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    } 
+  
+    .cuadro1{
+      padding: 3rem 0 3rem 0 !important;
+    }
+
+    .cuadro1 h1, .cuadro2 h1 {
+      font-size: 30px;
+    }
+
+    .cuadro2{
+        span {
+        font-size: 15px;
+      }
+    } 
+  
+    .flexslider, .cuadro1, .cuadro2 {
+      margin-bottom: 50%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+
+    
+
+    .cuadro2{
+
+      padding: 3rem 0 3rem 0;
+
+      ul{
+        flex-direction: column !important;
+        li{
+          width: 70% !important;
+          h2 {
+          font-size: 17px;
+          }
+        } 
+      } 
+    } 
+  
+
+
+    .obras-image{
+      article{
+        img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      } 
+    } 
+  
+    .imagen{
+      img {
+      width: 50px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    } 
+  
+    .imagen {
+      position: relative;
+      right: 50px;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+    }
+  
+  }
+
+
+
+
+  
+  @media (max-width: 600px) {
+
+
+    .cuadro1{
+
+      p{
+        font-size:15px !important;
+      }
+    }
+    
+
+    
+    .cuadro2{
+      ul {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        li {
+          margin-bottom: 20px;
+
+          h3{
+            font-size: 20px;
+            span{
+              font-size: 30px !important;
+            }
+
+          }
+        }
+      }
+    } 
+    
+  }
+  
+  
+
+   
+
+ 

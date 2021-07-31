@@ -1,0 +1,52 @@
+
+/*---------------IMAGENES DE LAS OBRAS REALIZADAS-------------*/
+.obras-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .obras-image{
+    article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+   
+  .obras-image{
+    article {
+        img {
+        border-radius: 3px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 600px;
+        max-height: 600px;
+        margin: 5px;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  .obras-image{
+    article:hover{
+        .desc-obra {
+        transition: all 0.5s ease-in-out;
+        opacity: 1;
+      }
+    } 
+  }
+   
+  .desc-obra {
+    text-shadow: 2px 2px 2px rgba(000, 000, 000, 0.7);
+    background-color: rgb(59, 59, 59);
+    color: white;
+    opacity: 0;
+    position: relative;
+    bottom: 29px;
+    width: 96%;
+  }
