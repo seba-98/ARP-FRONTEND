@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 body {
   margin: 0px;
   padding: 0px;
@@ -72,6 +73,7 @@ header {
 .desc-obra {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   background-color: #3b3b3b;
+  background-color: rgba(59, 59, 59, 0.5);
   color: white;
   opacity: 0;
   position: relative;
@@ -153,6 +155,23 @@ header nav {
       color: #3f3f3f;
       font-size: 18px; }
 
+@media (max-width: 1400px) {
+  .backgroundForm {
+    height: 80vh !important; }
+    .backgroundForm h2 {
+      font-size: 90px !important; }
+    .backgroundForm p {
+      font-size: 24px !important; }
+  .contactForm form {
+    width: 100% !important; }
+  .contactForm div {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 3rem; }
+    .contactForm div iframe {
+      width: 100% !important;
+      height: auto; } }
+
 @media (max-width: 1000px) {
   .obras-image article img {
     flex-direction: column; }
@@ -199,6 +218,12 @@ header nav {
     margin-bottom: 50%; } }
 
 @media (max-width: 650px) {
+  .backgroundForm {
+    height: 90vh !important; }
+    .backgroundForm h2 {
+      font-size: 50px !important; }
+    .backgroundForm p {
+      font-size: 20px !important; }
   .cuadro2 {
     padding: 3rem 0 3rem 0; }
     .cuadro2 ul {
@@ -292,8 +317,8 @@ header nav {
 
 .separator {
   /*SEPARA AL HEADER DEL SLIDER*/
-  height: 5px;
-  width: 100%; }
+  width: 100%;
+  height: 1px; }
 
 footer {
   padding-top: 3rem;
@@ -328,6 +353,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around; }
   .galleryTwo article {
+    border-radius: 3%;
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
@@ -338,4 +364,97 @@ footer {
     background: white; }
     .galleryTwo article img {
       max-width: 100%;
-      max-height: 90%; }
+      max-height: 90%;
+      border-radius: 3%; }
+
+.backgroundForm {
+  background-image: url(../Images/Obras_comprimidas/image-form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Rajdhani', sans-serif;
+  height: 60vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .backgroundForm h2 {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    font-weight: initial;
+    text-shadow: 1px 1px 1px black; }
+  .backgroundForm P {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+
+.contactForm {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: auto;
+  flex-wrap: wrap; }
+  .contactForm form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px; }
+    .contactForm form input {
+      height: 2.4rem;
+      border: 1px solid #c8c8c8;
+      border-radius: 5px; }
+    .contactForm form textArea {
+      border: 1px solid #c8c8c8; }
+    .contactForm form #sub {
+      display: flex;
+      width: auto;
+      height: auto;
+      align-self: center;
+      margin-top: 1rem;
+      padding: 1rem !important;
+      border-radius: 3%; }
+      .contactForm form #sub:hover {
+        background-color: #b6e784;
+        font-weight: bold; }
+    .contactForm form #msgEnviado {
+      position: relative;
+      left: 31rem;
+      bottom: 3rem;
+      padding: 6px;
+      border: 2px solid #afff9b;
+      background-color: #bffaba;
+      max-width: 120px;
+      text-align: center;
+      border-radius: 5px;
+      display: none; }
+  .contactForm div {
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem; }
+    .contactForm div .network {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5rem; }
+      .contactForm div .network h3 {
+        width: 100%;
+        text-align: center; }
+      .contactForm div .network .info-icons {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        .contactForm div .network .info-icons span {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+    .contactForm div iframe {
+      width: 700px;
+      height: 250px; }
