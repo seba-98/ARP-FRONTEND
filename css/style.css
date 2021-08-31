@@ -362,10 +362,29 @@ footer {
     overflow: hidden;
     padding: 1rem;
     background: white; }
-    .galleryTwo article img {
+    .galleryTwo article div {
+      box-shadow: 0px 0px 20px #585858;
       max-width: 100%;
       max-height: 90%;
       border-radius: 3%; }
+
+#1c {
+  box-shadow: 0px 0px 20px #585858;
+  width: 900px !important;
+  height: 900px !important;
+  background-image: url(../Images/1c.jpg); }
+
+#2c {
+  box-shadow: 0px 0px 20px #585858;
+  width: 900px !important;
+  height: 900px !important;
+  background-image: url(../Images/2c.jpg); }
+
+#3c {
+  box-shadow: 0px 0px 20px #585858;
+  width: 900px !important;
+  height: 900px !important;
+  background-image: url(../Images/3c.jpg); }
 
 .backgroundForm {
   background-image: url(../Images/Obras_comprimidas/image-form.jpg);

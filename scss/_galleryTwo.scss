@@ -13,7 +13,8 @@
         justify-content: center;
         max-width: 35rem;
 
-        img{
+        div{
+            box-shadow: 0px 0px 20px rgb(88, 88, 88);
             max-width: 100%;
             max-height: 90%;
             border-radius: 3%;
@@ -23,4 +24,16 @@
         padding: 1rem;
         background: white;
     }
+}
+
+
+@each $image in 1c, 2c, 3c {
+
+    ##{$image}{
+        box-shadow: 0px 0px 20px rgb(88, 88, 88);
+        width: 900px !important;
+        height: 900px !important;
+        background-image: url(../Images/#{$image}.jpg);
+    }
+    
 }
