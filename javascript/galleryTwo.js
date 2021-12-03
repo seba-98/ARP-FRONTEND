@@ -17,8 +17,9 @@ async function datos(){
 
     const req= await fetch('https://my-json-server.typicode.com/seba-98/guezData/db');
     const reqData= await req.json()
+    console.log(reqData)
     
-    for (const data of reqData) {
+    for (const data of reqData.data) {
 
         const item= document.createElement('article');
 
