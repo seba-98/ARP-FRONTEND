@@ -15,7 +15,7 @@ let imgs={};
 
 async function datos(){
 
-    const req= await fetch('../data/data.json');
+    const req= await fetch('https://my-json-server.typicode.com/seba-98/guezData/db');
     const reqData= await req.json()
     
     for (const data of reqData) {
