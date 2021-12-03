@@ -37,10 +37,13 @@ async function datos(){
     for(i=0;i<elements.length; i++){
         elements[i].addEventListener('click', function(){
 
-           let a=reqData.find(r=> r.id==this.id)
-           arrImg={...a}
-           modal.style.display='flex'
-           modalImg.setAttribute('src', arrImg.img )
+         
+
+                let a=reqData.data.find(r=> r.id==this.id)
+                arrImg={...a}
+                modal.style.display='flex'
+                modalImg.setAttribute('src', arrImg.img )
+            
 
         })
     }
