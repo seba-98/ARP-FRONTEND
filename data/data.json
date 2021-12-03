@@ -1,0 +1,35 @@
+[
+    {   
+        "id":1,
+        "info":"primer obra",
+        "img":"../Images/Obras_comprimidas/images_front/aa.jpg",
+        "img2":"../Images/Obras_comprimidas/images_back/ab2.jpg"
+    },
+    {   
+        "id":2,
+        "info":"segunda obra",
+        "img":"../Images/Obras_comprimidas/images_front/ab.jpg"
+    },
+    {   
+        "id":3,
+        "info":"tercera obra",
+        "img":"../Images/Obras_comprimidas/images_front/ac.jpg"
+    },
+    {   
+        "id":4,
+        "info":"cuarta obra",
+        "img":"../Images/Obras_comprimidas/images_front/ad.jpg"
+    },
+    {   
+        "id":5,
+        "info":"quinta obra",
+        "img":"../Images/Obras_comprimidas/images_front/ae.jpg"
+    },
+    {   
+        "id":6,
+        "info":"sexta obra",
+        "img":"../Images/Obras_comprimidas/images_front/af.jpg"
+    }
+    
+
+]

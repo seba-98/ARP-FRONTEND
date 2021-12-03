@@ -19,20 +19,6 @@ body {
   display: none;
   opacity: 0.7; }
 
-.gallery img {
-  max-width: 20%;
-  max-height: 20%;
-  padding-left: 1%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  float: right; }
-
-.gallery:hover {
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
-  animation-name: aumento;
-  animation-duration: 2s;
-  overflow: hidden; }
-
 header {
   width: 100%;
   position: fixed;
@@ -353,145 +339,103 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 5rem; }
-  .galleryTwo article {
-    border-radius: 3%;
+  padding-top: 10rem; }
+  .galleryTwo .articleGallery {
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
-    justify-content: center;
-    max-width: 35rem;
-    box-shadow: 0px 0px 20px #070707;
+    width: 34rem;
+    height: 26rem;
+    border-radius: 20px;
     overflow: hidden;
-    padding: 0rem;
-    background: white; }
-    .galleryTwo article p {
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
+    background-color: white;
+    margin: 5rem 0 5rem 0;
+    box-shadow: 5px 5px 20px black;
+    cursor: pointer; }
+    .galleryTwo .articleGallery .galleryImg {
+      width: 100%;
+      height: 80%; }
+    .galleryTwo .articleGallery p {
+      background-color: white;
+      color: #6b6b6b;
       font-weight: bold;
-      color: #5f5e5e;
-      text-align: center;
-      padding: 15px; }
+      font-size: 16px; }
 
-#aa {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/aa.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(95, 95, 95, 0.7);
+  z-index: 1;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+  #modal #modalImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(49, 49, 49, 0);
+    border-radius: 50px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 20px; }
+    #modal #modalImgs .closeContent {
+      display: flex;
+      justify-content: end;
+      width: 52%; }
+      #modal #modalImgs .closeContent button {
+        max-width: 80px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        background-color: rgba(248, 71, 71, 0.5);
+        transition: all 0.5s; }
+        #modal #modalImgs .closeContent button:hover {
+          background-color: red;
+          color: white; }
+    #modal #modalImgs img {
+      width: 52%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 3px 3px  20px black; }
+    #modal #modalImgs .buttom-content button {
+      padding: 2px 10px 2px 10px;
+      margin: 0 30px 0 30px;
+      border-radius: 50%;
+      background-color: white;
+      font-weight: bold;
+      border: none;
+      transition: all 0.5s; }
+      #modal #modalImgs .buttom-content button:hover {
+        background-color: black;
+        color: white; }
 
-#aa:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/aa2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
+@media (max-width: 1330px) {
+  #modalImgs .closeContent {
+    margin-top: 50px;
+    width: 80% !important; }
+  #modalImgs img {
+    width: 80% !important; } }
 
-#ab {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/ab.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
+@media (max-width: 950px) {
+  #modal {
+    width: 100% !important; }
+  #modalImgs .closeContent {
+    margin-top: 50px;
+    width: 100% !important; }
+  #modalImgs img {
+    width: 100% !important; } }
 
-#ab:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/ab2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
-
-#ac {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/ac.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
-
-#ac:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/ac2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
-
-#ad {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/ad.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
-
-#ad:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/ad2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
-
-#ae {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/ae.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
-
-#ae:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/ae2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
-
-#af {
-  width: 100% !important;
-  height: 500px !important;
-  background-image: url(../Images/Obras_comprimidas/images_front/af.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  transition: all 0.9s; }
-
-#af:hover {
-  transform: rotateY(180deg);
-  background-image: url(../Images/Obras_comprimidas/images_back/af2.jpg);
-  width: 100% !important;
-  height: 500px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
+@media (max-width: 556px) {
+  .articleGallery {
+    width: 20rem !important; } }
 
 .backgroundForm {
   background-image: url(../Images/Obras_comprimidas/image-form.jpg);

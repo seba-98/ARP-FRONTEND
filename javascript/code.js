@@ -1,7 +1,6 @@
 
 $(document).ready(function () {
   
-
   
   $('.facebook').mouseenter(function () { 
     
@@ -38,12 +37,9 @@ $(document).ready(function () {
   })
   
   
-  
   /*MOSTRAR LAS PAGINAS  */
   
-  
-  
-  
+
 });
 
 

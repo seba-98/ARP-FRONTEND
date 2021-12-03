@@ -7,60 +7,135 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
     
 
-    article{
-        border-radius: 3%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 10rem;
-        justify-content: center;
-        max-width: 35rem;
-        box-shadow: 0px 0px 20px rgb(7, 7, 7);
-        
-        overflow: hidden;
-        padding: 0rem;
-        background: white;
+    .articleGallery{
+      display: flex;
+      flex-direction: column;
+      width: 34rem;
+      height: 26rem;
+      border-radius: 20px;
+      overflow: hidden;      
+      background-color: white;
+      margin: 5rem 0 5rem 0;
+      box-shadow: 5px 5px 20px rgb(0, 0, 0);
+      cursor: pointer;
+    .galleryImg{
+    width: 100%;
+    height: 80%;
+    }
+    p{
+        background-color: white;
+        color: rgb(107, 107, 107);
+        font-weight: bold;
+        font-size: 16px;
+    }
 
-        p{
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            color: rgb(95, 94, 94);
-            text-align: center;
-            padding: 15px;
+    }
+}
+
+
+
+#modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(95, 95, 95, 0.7);
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    #modalImgs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(49, 49, 49,0.0);
+        border-radius: 50px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        .closeContent{
+            display: flex;
+            justify-content: end;
+            width: 52%;
+            button{
+                max-width: 80px;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+                background-color: rgba(248, 71, 71, 0.5);
+                transition: all 0.5s;
+                &:hover{
+                    background-color: rgb(255, 0, 0);
+                    color: white;
+                }
+            }
+        }
+        img{
+            width: 52%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 3px 3px  20px black;
+        }
+        .buttom-content{
+            button{
+                padding: 2px 10px 2px 10px;
+                margin: 0 30px 0 30px;
+                border-radius: 50%;
+                background-color: white;
+                font-weight: bold;
+                border: none;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
         }
     }
 }
 
-
-
-@each $image in aa, ab, ac, ad, ae, af{
-
-    ##{$image}{
-       
-        width: 100% !important;
-        height: 500px !important;
-        background-image: url(../Images/Obras_comprimidas/images_front/#{$image}.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
-        transition: all 0.9s;
-        
-    }
-    
-    ##{$image}:hover{
-        transform: rotateY(180deg);
-        background-image: url(../Images/Obras_comprimidas/images_back/#{$image}2.jpg);
-        width: 100% !important;
-        height: 500px !important;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
+@media(max-width: 1330px){
+    #modalImgs{
+        .closeContent{
+            margin-top: 50px;
+            width: 80% !important;
+        }
+        img{
+            width: 80% !important;
+        }
     }
 }
+@media(max-width: 950px){
 
+    #modal{
+        width: 100%!important;
+    }
 
+    #modalImgs{
+        
+        .closeContent{
+            margin-top: 50px;
+            width: 100% !important;
+        }
+        img{
+            width: 100% !important;
+        }
+    }
+}
+@media(max-width: 556px){
+    .articleGallery{
+        width: 20rem !important;
+    }
+}
