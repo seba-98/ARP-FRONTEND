@@ -14,7 +14,6 @@ $("#contForm").submit(async function (e) {
     
     if(response.ok){
         this.reset();
-        console.log("se envio")
 
         $("#msgEnviado").fadeIn("slow").fadeOut(5000);
 
